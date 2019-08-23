@@ -38,16 +38,16 @@ public class FinderTest {
 
     @Test
     public void test_findMaxEmpty() {
-        int[] intArray = {0};
-        Integer expectedInt = 0;
+        int[] intArray = {};
+        Integer expectedInt = null;
         Integer actualMax = Finder.findMax(intArray);
         assertEquals(expectedInt, actualMax);
     }
 
     @Test
     public void test_findMinEmpty() {
-        int[] intArray = {0};
-        Integer expectedInt = 0;
+        int[] intArray = {};
+        Integer expectedInt = null;
         Integer actualMin = Finder.findMin(intArray);
         assertEquals(expectedInt, actualMin);
     }
